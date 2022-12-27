@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -227,7 +229,7 @@
 {{-- display is calling from here --}}
 <div class="flex-container" style="display: flex;justify-content:center;font-family:'Rubik Spray Paint', cursive;"><h1>Our customers List</h1></div>
     <div style="border:margin-top:5%;" class="container">
-        <table class="table mt-5">
+        <table id="example" class="table table-striped" style="width:100%">
             <thead class=" bg-danger text-white fw-bold">
                 <th>Travel id</th>
                 <th>Traveler Name</th>
@@ -235,6 +237,8 @@
                 <th>Password</th>
                 <th>DOB</th>
                 <th>Gender</th>
+                <th>Edit</th>
+                <th>Delete</th>
             </thead>
             <tbody>
                 @foreach ($read as $item)

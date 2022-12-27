@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Add-Card</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -257,8 +257,9 @@ label {
         <!-- /.navbar-collapse -->
     </nav>
 {{-- The form --}}
-<form action="adding" method="GET" autocomplete="off">
+<form action="adding" method="POST" autocomplete="off"  enctype="multipart/form-data">
     @csrf
+    @method('put')
 <div class="container">
     <div class=" text-center mt-5 ">
         <h1 style="font-family:'Rubik Spray Paint', cursive;" >Data Can Enter From Here</h1>
@@ -271,7 +272,7 @@ label {
         <div class="card-body bg-light">
    
         <div class = "container">
-                         <form id="contact-form" role="form">
+{{-- <form id="contact-form" role="form"> --}}
 
         
 
@@ -291,7 +292,7 @@ label {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="form_need">Image *</label>
-                        <input id="form_email" type="file" name="img" class="form-control" placeholder="Please enter your image *" required="required" data-error="Valid image is required.">
+                        <input id="form_email" type="file" name="image" class="form-control" placeholder="Please enter your image *" required="required" data-error="Valid image is required.">
                         
                     </div>
                 </div>
@@ -308,7 +309,7 @@ label {
             </div>
             </div>
     </div>
-     </form>
+     {{-- </form> --}}
     </div>
         </div>
 

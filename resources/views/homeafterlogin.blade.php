@@ -137,7 +137,7 @@
                 <li><a class="dropdown-item" href="#">Canada</a></li>
               </ul>
             </li>
-            <a id="loginbutton" class="nav-link" style="border:2px solid black;width:12%;text-align:center;border-radius:12px;color:white;background-color:black;margin-left:53%;" href="Home">Logout</a>
+            <a id="loginbutton" class="nav-link" style="border:2px solid black;width:12%;text-align:center;border-radius:12px;color:white;background-color:black;margin-left:53%;" href="/">Logout</a>
           </div>
           
         </div>

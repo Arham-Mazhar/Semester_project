@@ -8,5 +8,4 @@ use Illuminate\Database\Eloquent\Model;
 class Adminadd extends Model
 {
     use HasFactory;
-    public $timestamps=false;
 }

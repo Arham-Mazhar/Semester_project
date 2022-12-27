@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Cards-Display</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -233,6 +233,7 @@
             <th>Title</th>
             <th>Image</th>
             <th>Description</th>
+            <th>Delete</th>
             
         </thead>
         <tbody>
@@ -242,11 +243,11 @@
                     @csrf
                 <td> {{$item['id']}}</td>
                 <td> {{$item['Titile']}}</td>
-                <td> {{$item['Image']}}</td>
-                <td> {{$item['Discription']}}</td>
-            
-                {{-- <td><a href="{{ url('edit/'.$item['id']) }}" class="btn btn-success">Edit</a></td>
-                <td><a href="{{url('delete/'.$item['id'])}}" class="btn btn-danger">Delete</a></td> --}}
+                <td> 
+                    <img src={{asset('upload/'.$item->Image)}} style="width : 100px ;  height : 100px ;" alt="no image">
+                </td>
+                <td> {{$item['Description']}}</td>
+                <td><a href="{{url('remove/'.$item['id'])}}" class="btn btn-danger">Delete</a></td>
             </form>
             </tr>
                 @endforeach

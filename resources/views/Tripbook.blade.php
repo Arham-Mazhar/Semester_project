@@ -149,8 +149,8 @@ select:focus{
 		<!--First Row-->
 		<div class="row mb-3 mt-3">
 
-			<label class="radiobtn"><input type="radio" name="gender" value="male">One Way</label>
-			<label class="radiobtn"><input type="radio" name="gender" value="male">Round Trip</label>
+			<label class="radiobtn"><input type="radio" name="flight" value="male">One Way</label>
+			<label class="radiobtn"><input type="radio" name="flight" value="male">Round Trip</label>
 
 		</div>
 
@@ -159,7 +159,7 @@ select:focus{
 		<div class="row">
 
 			<div class="col-sm-6">
-				<select class="browser-default custom-select mb-4" id="select">
+				<select class="browser-default custom-select mb-4" id="select" name="countryoff">
         <option value="" disabled="" selected="">From Country/Airport</option>
         <option value="1">Pakistan</option>
         <option value="2">Paris</option>
@@ -184,7 +184,7 @@ select:focus{
 			</div>
 
 			<div class="col-sm-6">
-				<select class="browser-default custom-select mb-4" id="select">
+				<select class="browser-default custom-select mb-4" id="select" name="countrycome">
         <option value="" disabled="" selected="">To Country/Airport</option>
         <option value="1">Pakistan</option>
         <option value="2">Paris</option>
@@ -215,11 +215,11 @@ select:focus{
 		<div class="row">
 
 			<div class="col-sm-6">
-				<input placeholder="&#xf073; Departing" type="text" id="date-picker-example" class="form-control datepicker mb-4" style="font-family:Arial, FontAwesome" >
+				<input placeholder="&#xf073; Departing" name="departing" type="text" id="date-picker-example" class="form-control datepicker mb-4" style="font-family:Arial, FontAwesome" >
 			</div>
 
 				<div class="col-sm-6">
-					<input placeholder="&#xf073; Arriving" type="text" id="date-picker-example" class="form-control datepicker" style="font-family:Arial, FontAwesome" >
+					<input placeholder="&#xf073; Arriving" name="arriving" type="text" id="date-picker-example" class="form-control datepicker" style="font-family:Arial, FontAwesome" >
 			</div>
 
 				</div>
@@ -229,7 +229,7 @@ select:focus{
 				<div class="row mt-4">
 
 					<div class="col-sm-6">
-						<select class="browser-default custom-select mb-4" id="select">
+						<select class="browser-default custom-select mb-4" id="select" name="anything1">
         <option value="" disabled="" selected="">Anytime</option>
         <option value="1">6:00 AM</option>
         <option value="2">3:00 PM</option>
@@ -238,7 +238,7 @@ select:focus{
 					</div>
 
 					<div class="col-sm-6">
-						<select class="browser-default custom-select mb-4" id="select">
+						<select class="browser-default custom-select mb-4" id="select" name="anyting2">
         <option value="" disabled="" selected="">Anytime</option>
           <option value="1">6:00 AM</option>
         <option value="2">3:00 PM</option>
@@ -247,15 +247,11 @@ select:focus{
 					</div>
 
 				</div>
-
-
-
-
 				<!--Fifth Row-->
 				<div class="row">
 
 					<div class="col-sm-4">
-						<select class="browser-default custom-select mb-4" id="select">
+						<select class="browser-default custom-select mb-4" id="select" name="kids">
         <option value="" disabled="" selected="">Kids(0-14)</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -264,7 +260,7 @@ select:focus{
 					</div>
 
 					<div class="col-sm-4">
-						<select class="browser-default custom-select mb-4" id="select">
+						<select class="browser-default custom-select mb-4" id="select" name="adults">
         <option value="" disabled="" selected="">Adults(15-64)</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -273,7 +269,7 @@ select:focus{
 					</div>
 
 					<div class="col-sm-4">
-						<select class="browser-default custom-select mb-4" id="select">
+						<select class="browser-default custom-select mb-4" id="select" name="seniors">
         <option value="" disabled="" selected="">Seniors(65+)</option>
    <option value="1">1</option>
         <option value="2">2</option>

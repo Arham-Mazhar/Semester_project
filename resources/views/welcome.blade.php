@@ -210,127 +210,14 @@
       
     </div>
     <div class="conatiner">
+      @foreach($read as $item)
       <div class="div1">
-        <a href="USA-List"> <img src="/image/statue-of-liberty-g85f02094b_1920.jpg" alt=""></a>
-        <h1>New York, USA</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
+        <a href="USA-List"> <img src={{asset('upload/'.$item->Image)}} alt=""></a>
+        <h1>{{$item->Titile}}</h1>
+        <p> {{$item->Description}}.</p>
      {{-- <button>Schedule Trip</button> --}}
       </div>
-      <div class="div2">
-        <a href="SouthKorea-List"> <img src="/image/gwanghwamun-g52f77017f_1920.jpg" alt=""></a>
-        <h1>Seoul, South Korea</h1>
-        <p>A nation ripe with cultural, historical, and natural tourist attractions, South Koreahas a plethora of interesting sights</p>
-        {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div3">
-        <a href="Pairis-List"> <img src="/image/paris-g5092fedb3_1920.jpg" alt=""></a>
-        <h1>Paris, France</h1>
-        <p>The most populous city of France. Since the 17th century, Paris has been one of Europe's major centres of finance, diplomacy, commerce, fashion, science.</p>
-        {{-- <button>Schedule Trip</button> --}}
-    </div>
-      <div class="div3">
-        <a href="Australia-List"><img src="/image/Australia.jpg" alt=""></a>
-        <h1>Sydney, Australia</h1>
-        <p>Australia, officially the Commonwealth of Australia, is a sovereign country comprising the mainland of the Australian continent, the island of Tasmania, and numerous.</p>
-        {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div3">
-        <a href="Europe-List"> <img src="/image/Greece europ.jpg" alt=""></a>
-       
-        <h1>Greece, Europe</h1>
-        <p>Situated on the southern tip of the Balkans, Greece is located at the crossroads of Europe, Asia, and Africa</p>
-        {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div3">
-        <a href="Spain-List"> <img src="/image/travel-g66d748e4c_1920.jpg" alt=""></a>
-       
-        <h1>Spain, Europe</h1>
-        <p>A country with some pockets of territory across the Strait of Gibraltar and the Atlantic Ocean.</p>
-        {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Pakistan-List"><img src="/image/pakistan.jpg" alt=""></a>
-     
-        <h1>Pakistan</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Dubai-List"><img src="/image/dubai.jpg" alt=""></a>
-        
-        <h1>Dubai, UAE</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="China-List"><img src="/image/china.jpg" alt=""></a>
-        
-        <h1>China</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Germany-List"><img src="/image/germany.jpg" alt=""></a>
-        
-        <h1>Germany, Europe</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="London-List"><img src="/image/london.jpg" alt=""></a>
-        
-        <h1>London, United Kingdom</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Canada-List"><img src="/image/niagara-ga3ef3d63a_1920.jpg" alt=""></a>
-      
-        <h1>Canada</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Portugal-List"><img src="/image/portugal.jpg" alt=""></a>
-        
-        <h1>Portugal</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Japan-List"><img src="/image/japan.jpeg" alt=""></a>
-        
-        <h1>Japan</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Singapore-List"><img src="/image/Singapore.jpg" alt=""></a>
-        
-        <h1>Singapore</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Denmark-List"><img src="/image/Denmark.jpg" alt=""></a>
-        
-        <h1>Denmark</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
-      <div class="div1">
-        <a href="Turkey-List"><img src="/image/Turkey.jpg" alt=""></a>
-        
-        <h1>Turkey</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div> <div class="div1">
-        <a href="Thailand-List"><img src="/image/thailand.jpg" alt=""></a>
-        
-        <h1>Thailand</h1>
-        <p>  The Statue of Liberty, Hollywood Sign, Golden Gate Bridge but it's also a place of incredible hospitality, wide open spaces and amazing natural beauty.</p>
-     {{-- <button>Schedule Trip</button> --}}
-      </div>
+      @endforeach
     </middle>
     <middle_lower>
       <div class="mi">

@@ -28,6 +28,7 @@ class database extends Controller
         $auth = count($check);
         if($auth == 1){
             return redirect('Homelogin');
+            
         }
         else{
             return redirect('Userlogin');
