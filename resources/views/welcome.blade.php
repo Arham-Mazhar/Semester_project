@@ -147,7 +147,7 @@
                 <li><a class="dropdown-item" href="https://travel.gc.ca/" target="_blank">Canada</a></li>
               </ul>
             </li>
-            <a href="Userlogin"><span style="margin-left: 1826%;margin-top: 5px;;" class="glyphicon glyphicon-user">Login</span></a>  
+            <a href="Userlogin"><span style="margin-top: 5px;;" class="glyphicon glyphicon-user">Login</span></a>  
             {{-- <a  id="loginbutton" class="loginbutton" style="padding-top:1px;text-decoration:none;border:2px solid black;width:12%;text-align:center;border-radius:12px;color:white;background-color:black;margin-left:53%;" href="Userlogin">Login</a> --}}
           </div>
           

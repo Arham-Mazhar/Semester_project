@@ -19,6 +19,7 @@ class adminadddatabase extends Controller
         $read = Adminadd::all();
         return view('adminhomepagedata',['read'=>$read]);
     }   
- 
+
+    
     
 }

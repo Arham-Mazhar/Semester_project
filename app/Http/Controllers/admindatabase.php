@@ -13,7 +13,7 @@ class admindatabase extends Controller
         $userpassword = $req->input('password');
         $check = DB::table('admins')->where('name',$username)->where('password',$userpassword)->get();
         $auth = count($check);
-        if($auth == 1){
+        if($auth == 0){
             return redirect('Welcome-Admin');
         }
         else{
